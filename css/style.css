@@ -27,6 +27,7 @@ body {
   --border-color-portoflio: #eeeeee;
   --footer-social-icon-bg: rgba(255, 255, 255, 0.1);
   --icon-inactive: rgba(175, 177, 184, 1);
+  --label-txt: white;
 }
 
 ul {
@@ -232,6 +233,27 @@ header .container {
   padding-bottom: 50px;
 }
 
+.services-li {
+  height: 294px;
+  width: 370px;
+  position: relative;
+}
+
+.services-label {
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--label-txt);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
 .team-section {
   background-color: var(--bcg-team-section);
   text-align: center;
@@ -239,10 +261,8 @@ header .container {
 
 .team-section-li {
   width: 270px;
-  /* height: 428px; */
   background-color: var(--bcg-photo);
   text-align: center;
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -474,11 +494,13 @@ h6 {
   width: 370px;
 }
 
-.portfolio-projects-li:hover {
+.portfolio-projects-li:hover,
+.portfolio-projects-li:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .portfolio-projects-li > figure {
