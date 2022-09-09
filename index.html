@@ -22,6 +22,21 @@
   </head>
 
   <body>
+    <div class="modal-box is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-window-close" data-modal-close>
+          <svg class="close-icon" width="30px" height="30px">
+            <use
+              href="./images/icons.svg#icon-close"
+              width="11px"
+              height="11px"
+              x="9px"
+              y="9px"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <!-- logo i pasek nawigacji -->
     <header class="header-style">
       <div class="container">
@@ -60,7 +75,7 @@
       <div class="background-strap">
         <section class="order-section">
           <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="button-inactive">Zamów usługę</button>
+          <button type="button" class="button-inactive" data-modal-open>Zamów usługę</button>
         </section>
       </div>
       <!-- lorem ipsum x4 -->
@@ -453,5 +468,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
